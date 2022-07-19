@@ -1,0 +1,274 @@
+$primary-light: #fff;
+$primary-black: #25292D;
+$banner-bg: #27282C;
+$black_1: #3D3D3D;
+$black_2: #6A6A6A;
+$black_3: #A8A8A8;
+$black_4: #D1D4DC;
+$gray_3: #E8E9EB;
+$gray_4: #F2F3F4;
+$gray_5: #F9FAFC;
+$gray_6: #F9F9F9;
+$gray_icons: #A7A7A9;
+$blue_2: #0071CE;
+$blue_5: #1C98FF;
+$accent_2: #17BA5F;
+$accent_3: #FFD200;
+$purple_1: #C288FF;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
+
+body {
+    background-color: $primary-light;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.header {
+    background: $primary-black;
+    height: 72px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__menu {}
+}
+
+.container {
+    width: 1410px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    &__navigation {
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    // .menu__item
+
+    &__item {
+        list-style: none;
+        margin-right: 40px;
+        opacity: .6;
+        font-size: 16px;
+        line-height: 28px;
+        color: $primary-light;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary-light;
+
+
+        }
+    }
+
+    // .menu__optional
+
+    &__optional {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.search {
+    display: flex;
+    height: 26px;
+    float: right;
+    padding: 0;
+    position: relative;
+    padding-left: 50px;
+    opacity: 1;
+    background-color: $primary-black;
+    &::before{
+        content: "";
+        padding-left: 13vw;
+    }
+}
+
+.search-text {
+    height: 26px;
+    font-size: 16px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 0 30px 5px 0;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+    color: $primary-light;
+
+    &:focus:hover {
+        border-bottom: 1px solid $gray_3;
+        background-color: $primary-black;
+    }
+
+    &:focus {
+        width: 200px;
+        z-index: 1;
+        border-bottom: 1px solid $gray_3;
+        cursor: text;
+        background-color: $primary-black;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px $primary-black inset !important;
+        background-color: $primary-black;
+    }
+
+    &::first-line {
+        color: $primary-light;
+    }
+
+}
+
+
+.search-btn {
+    background-image: url(./../images/search.svg);
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: right;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity .4s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+.shopping-cart {
+    background-image: url(./../images/shoping-cart.svg);
+    width: 24px;
+    height: 18px;
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+
+    // .shopping-cart__amount
+
+    &__amount {
+        position: absolute;
+        font-weight: 500;
+        font-size: 12px;
+        top: -8px;
+        right: -8px;
+        background: $blue_5;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.language {}
+
+.user {}
+
+.banner {
+    background: $banner-bg;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    // .banner_subtitle
+
+    &_subtitle {
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 30px;
+     color: $primary-light;
+     opacity: 0.8;
+ }
+
+    // .banner_mark
+
+    &_mark {
+    }
+
+    // .banner__info
+
+    &__info {
+    }
+
+    // .banner__top-text
+
+    &__top-text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $purple_1;
+
+    }
+
+    // .banner__title
+
+    &__title {
+        font-weight: 300;
+        font-size: 54px;
+        line-height: 96%;
+        color: $primary-light;
+        span{
+            font-weight: 500;
+        }
+    }
+
+    // .banner__img
+
+    &__img {
+        width: 540px;
+        height: 400px;
+    }
+}
+.container {
+}
+.btn {
+}
+.bg-blue2 {
+}
+.download {
+}
+.bg-transparent {
+}
+.buy {
+}
