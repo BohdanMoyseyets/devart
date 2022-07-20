@@ -1,55 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="header">
-      <nav class="container">
-        <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
-        <div class="header__menu menu">
-          <ul class="menu__navigation">
-            <li class="menu__item"><a href="">Products</a></li>
-            <li class="menu__item"><a href="">Store</a></li>
-            <li class="menu__item"><a href="">Support</a></li>
-            <li class="menu__item"><a href="">Blog</a></li>
-            <li class="menu__item"><a href="">Company</a></li>
-          </ul>
-          <div class="menu__optional">
-            <form class="menu__item search">
-              <input class="search-text" type="text" name="search-text" placeholder="Type something to search"/>
-              <a class="search-btn" href="#"></a>
-            </form>
-            <div class="menu__item shopping-cart">
-              <div class="shopping-cart__amount">1</div>
-            </div>
-            <div class="menu__item language">En</div>
-            <div class="menu__item user">AndreyV</div>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <section class="banner">
-      <div class="container">
-        <div class="banner__info">
-          <div class="banner__top-text">Achieve the next level productivity</div>
-          <div class="banner__title">dbForge <span>SQL Complete</span></div>
-          <div class="banner_subtitle">An advanced IntelliSense-style code completion add-in for SSMS and VS</div>
-          <div class="banner_mark">Free edition available</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="container">
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      <div class="header__menu menu">
+        <ul class="menu__navigation">
+          <li class="menu__item"><a href="">Products</a></li>
+          <li class="menu__item"><a href="">Store</a></li>
+          <li class="menu__item"><a href="">Support</a></li>
+          <li class="menu__item"><a href="">Blog</a></li>
+          <li class="menu__item"><a href="">Company</a></li>
+        </ul>
+        <div class="menu__optional">
+          <form class="menu__item search">
+            <input class="search-text" type="text" name="search-text" placeholder="Type something to search" />
+            <a class="search-btn" href="#"></a>
+          </form>
+          <div class="menu__item shopping-cart">
+            <div class="shopping-cart__amount">1</div>
+          </div>
+          <div class="menu__item language">En</div>
+          <div class="menu__item user">AndreyV</div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <div class="banner__info">
+        <div class="banner__top-text">Achieve the next level productivity</div>
+        <div class="banner__title">dbForge <span>SQL Complete</span></div>
+        <div class="banner__subtitle">An advanced IntelliSense-style code completion add-in for SSMS and VS</div>
+        <div class="banner__mark">Free edition available</div>
+        <div class="banner__btns">
           <a class="btn bg-blue2 download" href="#">download</a>
           <a class="btn bg-transparent buy" href="#">buy now</a>
         </div>
-        <div class="banner__img">
-          <img src="./images/Graphica_bg.svg" alt="img">
+
+      </div>
+      <div class="banner__img">
+        <img src="./images/Graphica_bg.svg" alt="img">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-line">
+    <div class="container">
+      <img src="/images/dbForge_SQLComplete_SQLS.svg" alt="img">
+      <div class="section-line__text">SQL Complete</div>
+      <a class="btn" href="#">buy now</a>
+    </div>
+  </section>
+
+  <section class="section1">
+    <div class="container">
+      <div class="section1__left">
+        <div class="section1__title">Advanced SQL Autocompletion Pretty SQL Formatting<br />Smart Code Refactoring</div>
+        <p class="section1__info">SQL Complete is an advanced solution for SQL database development, management, and
+          administration. Available as an add-in for Visual Studio and SSMS, the tool offers excellent autocompletion
+          capabilities.</p>
+        <p class="section1__info">Write, beautify, refactor your SQL code easily and boost your productivity
+          dramatically
+          due to the features that are included in SQL Complete but are lacking in Management Studio and Visual Studio
+          IntelliSense.</p>
+        <div class="section1__btns">
+          <a class="btn bg-blue2 watch-btn" href="#">
+            <img src="./images/btn-watch.svg" alt="img">
+            <span>watch the introductory video</span>
+          </a>
+          <a class="btn bg-transparent read-btn" href="#">
+            <img src="./images/read-btn.svg" alt="img">
+            <span>Read WhitePaper</span>
+          </a>
+        </div>
+      </div>
+      <div class="section1__right collapse">
+        <button class="collapse__title">Express edition available <span class="collapse__marker">free</span></button>
+        <div class="collapse__content">
+          <p>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+            objects while you are writing SQL code. This feature supports nearly 70 types of database objects.</p>
+        </div>
+        <button class="collapse__title">Beautify T-SQL code and unify code standards with smart SQL Formatter</button>
+        <div class="collapse__content">
+          <p>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+            objects while you are writing SQL code. This feature supports nearly 70 types of database objects.</p>
+        </div>
+        <button class="collapse__title">Get the essential information on DB objects while you are writing a
+          code</button>
+        <div class="collapse__content">
+          <p>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+            objects while you are writing SQL code. This feature supports nearly 70 types of database objects.</p>
+        </div>
+        <button class="collapse__title">Format your SQL query right in Management Studio or Visual Studio</button>
+        <div class="collapse__content">
+          <p>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+            objects while you are writing SQL code. This feature supports nearly 70 types of database objects.</p>
+        </div>
+        <button class="collapse__title">Use rich SQL code snippet collection, manage and modify the existing snippets or
+          create your own templates</button>
+        <div class="collapse__content">
+          <p>SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required
+            objects while you are writing SQL code. This feature supports nearly 70 types of database objects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container">
+      <div class="section-title">Check out our quick video guides</div>
+      <div class="tab-buttons">
+        <button class="tablink tablink_active" onclick="openTab(event,'Boost')">
+          <img src="./images/rocket.svg" alt="img">
+          <span>Boost productivity</span>
+        </button>
+        <button class="tablink" onclick="openTab(event,'Reuse')">
+          <img src="./images/reload.svg" alt="img">
+          <span>Reuse code modules</span>
+        </button>
+        <button class="tablink" onclick="openTab(event,'Improve')">
+          <img src="./images/Union_active.svg" alt="img">
+          <span>Improve code quality</span>
+        </button>
+      </div>
+
+      <div id="Boost" class="tab-content">
+        <div class="tab-content__left">
+          <div class="tab-content__title">Boost coding productivity</div>
+          <p class="tab-content__info">SQL Complete is designed to help the user increase their coding speed, dedicate
+            more time to actually writing code, help them make it more understandable, and reduce the number of syntax
+            errors.</p>
+          <p class="tab-content__info">Being an advanced SQL IntelliSense tool, SQL Complete helps most of these
+            benefits have an immediate effect. It offers valid context-specific suggestions to speed up query writing.
+            During typing, it conveniently leads the user through the syntax of SQL queries and commands.</p>
+          <a class="btn bg-transparent btn-learn-more" href="#">
+            <span>Learn more</span>
+            <img src="./images/link-arrow.svg" alt="img">
+          </a>
+        </div>
+        <div class="tab-content__right">
+          <img src="./images/Graphica.svg" alt="img">
         </div>
       </div>
 
-    </section>
-  </body>
+      <div id="Reuse" class="tab-content" style="display:none">
+        <div class="tab-content__left">
+          <div class="tab-content__title">Reuse code modules</div>
+          <p class="tab-content__info">SQL Complete is designed to help the user increase their coding speed, dedicate
+            more time to actually writing code, help them make it more understandable, and reduce the number of syntax
+            errors.</p>
+          <p class="tab-content__info">SQL Complete is designed to help the user increase their coding speed, dedicate
+            more time to actually writing code, help them make it more understandable, and reduce the number of syntax
+            errors.</p>
+          <a class="btn bg-transparent btn-learn-more" href="#">
+            <span>Learn more</span>
+            <img src="./images/link-arrow.svg" alt="img">
+          </a>
+        </div>
+        <div class="tab-content__right">
+          <img src="./images/Graphica.svg" alt="img">
+        </div>
+      </div>
+
+      <div id="Improve" class="tab-content" style="display:none">
+        <div class="tab-content__left">
+          <div class="tab-content__title">Improve code quality</div>
+          <p class="tab-content__info">Being an advanced SQL IntelliSense tool, SQL Complete helps most of these
+            benefits have an immediate effect. It offers valid context-specific suggestions to speed up query writing.
+            During typing, it conveniently leads the user through the syntax of SQL queries and commands.</p>
+          <p class="tab-content__info">SQL Complete is designed to help the user increase their coding speed, dedicate
+            more time to actually writing code, help them make it more understandable, and reduce the number of syntax
+            errors.</p>
+          <a class="btn bg-transparent btn-learn-more" href="#">
+            <span>Learn more</span>
+            <img src="./images/link-arrow.svg" alt="img">
+          </a>
+        </div>
+        <div class="tab-content__right">
+          <img src="./images/Graphica.svg" alt="img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="code">
+    <div class="container">
+      <div class="section-title">Unveil differences between formatting of predefined styles</div>
+      <div class="information">
+        <div class="left-col">
+          <div class="left-col__title">Formatting profiles</div>
+          <div class="vertical-tab-buttons">
+            <button class="vertical-tablink" onclick="openVerticalTab(event,'Collapsed')">Collapsed</button>
+            <button class="vertical-tablink vertical-tablink_active" onclick="openVerticalTab(event,'Commas')">Commas
+              before</button>
+            <button class="vertical-tablink" onclick="openVerticalTab(event,'Compact')">Compact</button>
+            <button class="vertical-tablink" onclick="openVerticalTab(event,'Default')">Default</button>
+            <button class="vertical-tablink" onclick="openVerticalTab(event,'Extended')">Extended</button>
+          </div>
+        </div>
+        <div class="right-col">
+          <div id="Collapsed" class="vertical-tab-content" style="display:none">
+            <img src="./images/code.svg" alt="img">
+            <div class="before-after">
+              <span>After formatting</span>
+              <span>Before formatting</span>
+            </div>
+          </div>
+          <div id="Commas" class="vertical-tab-content">
+            <img src="./images/code.svg" alt="img">
+            <div class="before-after">
+              <span>After formatting</span>
+              <span>Before formatting</span>
+            </div>
+          </div>
+          <div id="Compact" class="vertical-tab-content" style="display:none">
+            <img src="./images/code.svg" alt="img">
+            <div class="before-after">
+              <span>After formatting</span>
+              <span>Before formatting</span>
+            </div>
+          </div>
+          <div id="Default" class="vertical-tab-content" style="display:none">
+            <img src="./images/code.svg" alt="img">
+            <div class="before-after">
+              <span>After formatting</span>
+              <span>Before formatting</span>
+            </div>
+          </div>
+          <div id="Extended" class="vertical-tab-content" style="display:none">
+            <img src="./images/code.svg" alt="img">
+            <div class="before-after">
+              <span>After formatting</span>
+              <span>Before formatting</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>
