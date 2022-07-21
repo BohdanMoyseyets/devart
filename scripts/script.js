@@ -37,6 +37,20 @@ function openVerticalTab(evt, tabName) {
     for (i = 0; i < x.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" vertical-tablink_active", "");
     }
-    document.getElementById(tabName).style.display = "flex";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " vertical-tablink_active";
 }
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+});
