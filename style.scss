@@ -38,15 +38,26 @@ $purple_1: #C288FF;
 body {
     background-color: $primary-light;
     font-family: 'Fira Sans', sans-serif;
+    padding-top: 72px;
 }
 
 a {
     text-decoration: none;
 }
 
+.container {
+    width: 1410px;
+    margin: 0 auto;
+}
+
 .header {
     background: $primary-black;
     height: 72px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
 
     .container {
         display: flex;
@@ -58,10 +69,7 @@ a {
     &__menu {}
 }
 
-.container {
-    width: 1410px;
-    margin: 0 auto;
-}
+
 
 .logo {
     height: auto;
@@ -96,8 +104,6 @@ a {
         a {
             text-decoration: none;
             color: $primary-light;
-
-
         }
     }
 
@@ -167,7 +173,6 @@ a {
 
 }
 
-
 .search-btn {
     background-image: url(./../images/search.svg);
     display: block;
@@ -187,7 +192,6 @@ a {
         opacity: 1;
     }
 }
-
 
 .shopping-cart {
     background-image: url(./../images/shoping-cart.svg);
@@ -749,7 +753,7 @@ a {
 }
 
 .help {
-    padding: 100px 0 110px;
+    padding: 100px 0 91px;
 
     .container {
         display: flex;
@@ -813,19 +817,13 @@ a {
     width: 570px;
     box-sizing: border-box;
 
-    // .discount_info
-
     &_info {
         @include Open-Sans-font(18px, 32px, 400);
         color: $primary-light;
         margin: 14px 0;
     }
 
-    // .discount__img
-
     &__img {}
-
-    // .discount__title
 
     &__title {
         font-weight: 500;
@@ -834,8 +832,6 @@ a {
         color: $primary-light;
         margin-top: 31px;
     }
-
-    // .discount__bottom
 
     &__bottom {
         display: flex;
@@ -877,8 +873,6 @@ a {
     }
 
 }
-
-
 
 .slider-content {}
 
@@ -936,8 +930,9 @@ a {
         margin-top: 20px;
         @include Open-Sans-font(14px, 25px, 600);
         color: $black_1;
-        img{
-            margin-left:2px
+
+        img {
+            margin-left: 2px
         }
     }
 }
@@ -979,4 +974,39 @@ a {
     font-size: 18px;
     line-height: 22px;
     color: $black_2;
+}
+
+.footer {
+    background-color: #222227;
+
+    .container {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include Open-Sans-font(13px, 24px, 400);
+        color: $primary-light;
+        position: relative;
+
+        button {
+            display: flex;
+            color: $primary-light;
+            padding: 0;
+            background: transparent;
+            border: none;
+            align-items: center;
+
+            span {
+                opacity: 0.6;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__mid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
