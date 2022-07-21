@@ -41,16 +41,27 @@ function openVerticalTab(evt, tabName) {
     evt.currentTarget.className += " vertical-tablink_active";
 }
 
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+    console.log("ready!");
+    $(".slider-content").hide();
     var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
         pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
+            el: ".swiper-pagination",
+            type: "fraction",
+            formatFractionCurrent: function (number) {
+                if (number < 10) {
+                    return '0' + number;
+                }
+                return number;
+            }
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
-      });
+    });
+    $(".slider-content").show();
+
 });

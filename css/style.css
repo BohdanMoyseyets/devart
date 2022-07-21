@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 body {
   background-color: #fff;
   font-family: "Fira Sans", sans-serif;
@@ -724,34 +724,93 @@ a {
   background: #F9F9F9;
   padding: 90px 0;
 }
-
-.swiper-button-next::after {
-  content: none;
+.slider-section .container {
+  position: relative;
+}
+.slider-section .section-title {
+  margin-bottom: 47px;
 }
 
+.slide {
+  flex-direction: column;
+  padding-top: 210px;
+}
+.slide__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slide__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3D3D3D;
+  margin-top: 26px;
+}
+.slide__desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-top: 2px;
+  padding-right: 60px;
+  margin-bottom: 14px;
+}
+.slide__btn {
+  display: flex;
+  align-items: center;
+  width: 251px;
+  height: 36px;
+  background: #F9F9F9;
+  border: 1px solid #F2F3F4;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #3D3D3D;
+}
+.slide__btn img {
+  margin-left: 2px;
+}
+
+.slider-nav-block {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 165px;
+  height: 40px;
+  display: flex;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border: 1px solid #E8E9EB;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: unset;
+  box-sizing: border-box;
+  margin: 0;
+}
+.swiper-button-next::after,
 .swiper-button-prev::after {
   content: none;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
+.swiper-pagination {
+  position: unset;
+  width: 85px;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6A6A6A;
 }/*# sourceMappingURL=style.css.map */
