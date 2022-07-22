@@ -40,12 +40,27 @@ function openVerticalTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " vertical-tablink_active";
 }
+var toggleButton = document.querySelector('.toggle-menu');
+var navBar = document.querySelector('.nav-bar');
+toggleButton.addEventListener('click', function () {
+	navBar.classList.toggle('toggle');
+});
 
 $(document).ready(function () {
     console.log("ready!");
     $(".slider-content").hide();
+    let slides = 3;
+    var windowSize = $(window).width();
+        if (windowSize > 575 && windowSize <= 767) {
+            slides = 2;
+            console.log(slides);
+        }
+        else if (windowSize <= 575) {
+            slides = 1;
+            console.log(slides);
+        }
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: slides,
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
@@ -63,9 +78,19 @@ $(document).ready(function () {
         },
     });
     $(".slider-content").show();
+    $('#go_top').hide();
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#go_top').show().fadeIn();
+        } else {
+            $('#go_top').fadeOut().hide();
+        }
+    });
+    $('#go_top').click(function(){
+        $('html, body').animate({scrollTop : 0},360);
+        return false;
+    });
     $("#go_top").click(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
     });
-
-
 });
