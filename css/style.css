@@ -1764,8 +1764,7 @@ a {
     font-weight: 500;
     letter-spacing: 0.02em;
     top: 30px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 90px;
   }
   .banner__mark::before {
     width: 180px;

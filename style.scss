@@ -1971,8 +1971,7 @@ a {
             @include font-set(13px, 16px, 500);
             letter-spacing: 0.02em;
             top: 30px;
-            left: 50%;
-            transform: translate(-50%, 0);
+            left: 90px;
 
             &::before {
                 width: 180px;
