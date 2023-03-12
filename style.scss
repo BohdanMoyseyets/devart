@@ -2214,16 +2214,19 @@ a {
         .section-title {
             text-align: center;
         }
+
         padding: 20px 0;
-        
+
         &__block {
             margin-top: 10px;
             gap: unset;
             justify-content: space-between;
         }
+
         &__item {
             margin-bottom: 10px;
-            img{
+
+            img {
                 width: 160px;
                 object-fit: contain;
             }
@@ -2241,20 +2244,22 @@ a {
                 margin-bottom: 10px;
             }
         }
+
         .item {
             gap: 20px;
             padding: 20px;
-        
+
             &_title {
                 font-size: 16px;
                 line-height: 26px;
             }
+
             &__img {
-                img{
+                img {
                     width: 40px;
                 }
             }
-        
+
             &__desc {
                 @include font-set(14px, 22px, 400);
             }
@@ -2275,7 +2280,8 @@ a {
             width: fit-content;
             float: left;
             margin-top: 20px;
-            img{
+
+            img {
                 width: 40px;
             }
         }
@@ -2292,13 +2298,15 @@ a {
                 display: none;
             }
         }
-        &__bottom{
+
+        &__bottom {
             align-items: flex-end;
         }
+
         .price {
             display: flex;
             flex-direction: column;
-            
+
             span {
                 margin-left: 0;
                 font-size: 36px;
@@ -2340,11 +2348,12 @@ a {
             @include font-set(13px, 25px, 600);
         }
     }
+
     .slider-nav-block {
         right: 10px;
         width: 145px;
     }
-    
+
     .swiper-pagination {
         width: 65px;
         @include font-set(14px, 20px, 400);
@@ -2355,6 +2364,7 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             button {
                 position: fixed;
                 bottom: 10px;
